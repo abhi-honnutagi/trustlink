@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+<meta charset="UTF-8">
+
+<title>TrustLink Cybersecurity Scanner</title>
+
+<link rel="stylesheet" href="style.css">
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+</head>
+
+
+<body>
+
+<h1>🔐 TrustLink Security Scanner</h1>
+
+<p>Select a security scan type</p>
+
+<select id="scanType" onchange="changeScanner()">
+
+<option value="">Select Scan Type</option>
+
+<option value="url">Scan URL</option>
+
+<option value="email">Scan Email or Message</option>
+
+<option value="image">Scan Screenshot</option>
+
+<option value="file">Scan File Malware</option>
+
+</select>
+
+
+
+<!-- URL SCANNER -->
+
+<div id="urlScanner" class="scanner" style="display:none">
+
+<h2>🌐 URL Phishing Scanner</h2>
+
+<input type="text" id="urlInput" placeholder="Enter suspicious URL">
+
+<br><br>
+
+<button onclick="scanURL()">Scan URL</button>
+
+<h3 id="urlResult"></h3>
+
+</div>
+
+
+
+<!-- EMAIL SCANNER -->
+
+<div id="emailScanner" class="scanner" style="display:none">
+
+<h2>📧 Email or Message Scanner</h2>
+
+<textarea id="emailInput" placeholder="Paste email content here"></textarea>
+
+<br><br>
+
+<button onclick="scanEmail()">Scan Email</button>
+
+<h3 id="emailResult"></h3>
+
+</div>
+
+
+
+<!-- IMAGE SCANNER -->
+
+<div id="imageScanner" class="scanner" style="display:none">
+
+<h2>🖼 Screenshot Phishing Scanner</h2>
+
+<input type="file" id="imageUpload">
+
+<br><br>
+
+<button onclick="scanImage()">Scan Screenshot</button>
+
+<h3 id="imageResult"></h3>
+
+</div>
+
+
+
+<!-- FILE MALWARE SCANNER -->
+
+<div id="fileScanner" class="scanner" style="display:none">
+
+<h2>🦠 Malware File Scanner</h2>
+
+<input type="file" id="fileUpload">
+
+<br><br>
+
+<button onclick="scanFile()">Scan File</button>
+
+<div id="fileResult"></div>
+
+</div>
+
+
+<script src="script.js"></script>
+
+<h2>Threat Detection Dashboard</h2>
+
+<div class="chart-container">
+    <canvas id="threatChart"></canvas>
+</div>
+
+<h2>Recent Scan History</h2>
+
+<table border="1">
+
+<thead>
+<tr>
+<th>Type</th>
+<th>Item</th>
+<th>Result</th>
+<th>Date</th>
+</tr>
+</thead>
+
+<tbody id="historyTable"></tbody>
+
+</table>
+
+</body>
+
+</html>

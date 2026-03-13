@@ -1,0 +1,174 @@
+/* GLOBAL PAGE */
+
+body{
+
+font-family: Arial, Helvetica, sans-serif;
+
+background-image: url("img2.png");
+
+background-size: cover;
+background-position: center;
+background-repeat: no-repeat;
+background-attachment: fixed;
+
+color:white;
+text-align:center;
+
+margin:0;
+padding:0;
+
+}
+
+/* TITLE */
+
+h1{
+
+margin-top:30px;
+color:#ffffff;
+font-size:32px;
+
+}
+
+
+/* SELECT MENU */
+
+select{
+
+padding:10px;
+font-size:14px;
+margin:15px;
+
+background:#1e293b;
+color:white;
+
+border:1px solid #334155;
+border-radius:6px;
+
+}
+
+
+/* SCANNER BOX */
+
+.scanner{
+
+margin-top:25px;
+padding:25px;
+
+background:rgba(0,0,0,0.75);
+
+width:420px;
+margin-left:auto;
+margin-right:auto;
+
+border-radius:10px;
+box-shadow:0 0 15px rgba(0,0,0,0.6);
+
+}
+
+/* INPUTS */
+
+input, textarea{
+
+width:80%;
+padding:10px;
+margin:10px;
+
+border-radius:6px;
+border:1px solid #334155;
+
+background:#0f172a;
+color:white;
+
+}
+
+
+/* BUTTON */
+
+button{
+
+padding:10px 20px;
+
+background:#22c55e;
+color:white;
+
+border:none;
+border-radius:6px;
+
+cursor:pointer;
+font-weight:bold;
+
+}
+
+button:hover{
+
+background:#16a34a;
+
+}
+
+
+/* RESULT AREA */
+
+#fileResult{
+
+margin-top:15px;
+font-size:16px;
+
+}
+
+
+/* DASHBOARD CHART */
+
+.chart-container{
+
+width:500px;
+height:280px;
+
+margin:auto;
+margin-top:40px;
+
+background:rgba(30,41,59,0.9);
+
+padding:20px;
+
+border-radius:10px;
+
+}
+
+
+canvas{
+
+max-width:100%;
+max-height:100%;
+
+}
+
+
+/* HISTORY TABLE */
+
+table{
+
+margin:auto;
+margin-top:30px;
+
+border-collapse:collapse;
+width:60%;
+
+background:rgba(30,41,59,0.9);
+
+}
+
+
+th, td{
+
+padding:12px;
+border:1px solid #334155;
+
+}
+
+
+th{
+
+background:#0f172a;
+color:#38bdf8;
+
+}
